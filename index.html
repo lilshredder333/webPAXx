@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en, es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nuria Nogales">
+    <meta name="description" content="Hoja Técnica Especificaciones Switches">
+    <link rel="icon" type="image/x-icon" href="IMG/FAVICON/cora-mediano.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Hoja Técnica Switches</title>
+</head>
+
+
+<body>
+        <nav class="navbar">
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="HTML/DES-1016D.html" class="nav-links">DES-1016D</a>
+                </li>
+                <li>
+                    <a href="HTML/DGS-1016S.html" class="nav-links">DGS-1016S</a>
+                </li>
+                <li>
+                    <a href="HTML/DGS-105GL.html" class="nav-links">DGS-105GL</a>
+                </li>
+                <li>
+                    <a href="HTML/DGS-1005D.html" class="nav-links">DGS-1005D</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <header onclick="definicion()">
+            <h1>¿Qué es una hoja técnica?</h1>
+
+        </header>
+
+    <main>
+        <h2 id="defHojaTec">Una hoja técnica es un documento que proporciona información detallada sobre las especificaciones,
+            características y capacidades del dispositivo. Cada parte de la hoja técnica está destinada a proporcionar
+            información específica sobre diferentes aspectos del dispositivo.
+        </h2>
+        
+        <div id="contenedorBotones">
+            <h2>Apartados que nos podemos encontrar</h2>
+            <button onclick="muestra('contenidoGeneral')">Apartado General</button>
+            <button onclick="muestra('contenidoFuncionalidad')">Apartado Funcionalidad</button>
+            <button onclick="muestra('contenidoFisico')">Apartado Físico</button>
+            <button onclick="muestra('contenidoCertificaciones')">Apartado Certificaciones</button>
+            <button onclick="muestra('contenidoSoftware')">Apartado Software</button>
+        </div>
+       
+        <div id="contenidoEspecificaciones">
+            <div class="contenido" id="contenidoGeneral">
+                <h2>General</h2>
+                <div class="titulosh3">
+                    <h3>Model Number</h3>
+                    <p>
+                        Un número de modelo es un identificador único asignado a cada versión de un dispositivo de
+                        hardware o software en la fabricación. Este número permite distinguir una versión específica del
+                        dispositivo y proporciona información sobre sus características y especificaciones.
+                    </p>
+                    <h3>Hardware Version</h3>
+                    <p>
+                        La versión de hardware de un dispositivo se refiere a la revisión específica del hardware que se
+                        está utilizando. Las actualizaciones de hardware pueden incluir mejoras en el rendimiento,
+                        correcciones de errores o cambios en el diseño físico.
+                    </p>
+                    <h3>Device Interfaces</h3>
+                    <p>
+                        Las interfaces de dispositivo se refieren a los puertos físicos o conexiones disponibles en el
+                        dispositivo para conectar otros dispositivos. Esto puede incluir puertos Ethernet, puertos USB,
+                        puertos de consola, etc.
+                    </p>
+                    <h3>Standards</h3>
+                    <p>
+                        Los estándares en el contexto de un dispositivo se refieren a las especificaciones técnicas y
+                        protocolos que cumple el dispositivo. Esto puede incluir estándares como IEEE 802.3 para
+                        Ethernet, IEEE 802.11 para Wi-Fi, entre otros.
+                    </p>
+                    <div class="crearEspacio"></div>      
+                </div>
+
+            </div>
+
+            <div class="contenido" id="contenidoFuncionalidad">
+                <h2>Functionality</h2>
+                <div class="titulosh3">
+                    <h3>Port Packet Filtering/ Forwarding Rate</h3>
+                    <p>
+                        La tasa a la que el switch puede filtrar y reenviar paquetes a través de sus puertos.
+                    </p>
+                    <h3>Advanced Features</h3>
+                    <p>
+                        Características avanzadas que ofrece el switch, como VLAN, QoS, etc.
+                    </p>
+                    <h3>Swtiching Fabric</h3>
+                    <p>
+                        La capacidad de la matriz de conmutación, que determina la cantidad total de datos que el switch
+                        puede procesar simultáneamente.
+                    </p>
+                    <h3>Data Transfer Rates</h3>
+                    <p>
+                        Las velocidades de transferencia de datos admitidas por el switch en cada puerto.
+                    </p>
+                    <h3>Transmission Method</h3>
+                    <p>
+                        El método de transmisión utilizado por el switch, como Ethernet, Gigabit Ethernet, etc.
+                    </p>
+                    <h3>MAC Address Table</h3>
+                    <p>
+                        La tabla que contiene las direcciones MAC de los dispositivos conectados a los puertos del
+                        switch.
+                    </p>
+                    <h3>MAC Address Learning</h3>
+                    <p>
+                        Describe cómo el switch aprende y actualiza la tabla de direcciones MAC.
+                    </p>
+                    <h3>Packet Filtering/Forwarding Rates</h3>
+                    <p>
+                        Tasa a la que el switch puede filtrar y reenviar paquetes.
+                    </p>
+                    <h3>Packet Buffer</h3>
+                    <p>
+                        El tamaño del búfer utilizado para almacenar temporalmente paquetes mientras se procesan.
+                    </p>
+                    <h3>RAM Buffer</h3>
+                    <p>
+                        La cantidad de memoria RAM dedicada al almacenamiento temporal de datos de red.
+                    </p>
+                    <h3>Topology</h3>
+                    <p>
+                        La topología de red admitida por el switch, como estrella, árbol, etc.
+                    </p>
+                    <h3>Protocol</h3>
+                    <p>
+                        Los protocolos de red admitidos por el switch.
+                    </p>
+                    <div class="crearEspacio"></div>
+                </div>
+                
+            </div>
+
+            <div class="contenido" id="contenidoFisico">
+                <h2>Physical</h2>
+                <div class="titulosh3">
+                    <h3>LED indicators</h3>
+                    <p>
+                        Los indicadores LED en el switch que proporcionan información visual sobre el estado y la
+                        actividad de los puertos.
+                    </p>
+                    <h3>Media Interface Exchange</h3>
+                    <p>
+                        Describe si el switch es capaz de detectar automáticamente el tipo de medio de conexión en los
+                        puertos.
+                    </p>
+                    <h3>Dimensions</h3>
+                    <p>
+                        Las dimensiones físicas del switch.
+                    </p>
+                    <h3>Weight</h3>
+                    <p>
+                        El peso del switch.
+                    </p>
+                    <h3>Power</h3>
+                    <p>
+                        La fuente de alimentación del switch, como adaptador de corriente, PoE, etc.
+                    </p>
+                    <h3>Power Consumption</h3>
+                    <p>
+                        La cantidad de energía consumida por el switch durante el funcionamiento normal.
+                    </p>
+                    <h3>Temperature</h3>
+                    <p>
+                        El rango de temperatura en el que el switch puede funcionar correctamente.
+                    </p>
+                    <h3>Humidity</h3>
+                    <p>
+                        El rango de humedad en el que el switch puede funcionar correctamente.
+                    </p>
+                    <h3>MTBF</h3>
+                    <p>
+                        Mean Time Between Failures <br>
+                        El tiempo medio entre fallos del switch, una medida de confiabilidad.
+                    </p>
+                    <h3>Heat Dissipation</h3>
+                    <p>
+                        La cantidad de calor que el switch disipa durante su funcionamiento.
+                    </p>
+                    <div class="crearEspacio"></div>
+                </div>
+                
+            </div>
+
+            <div class="contenido" id="contenidoCertificaciones">
+                <h2>Certifications</h2>
+                <div class="titulosh3">
+                    <h3>Safety</h3>
+                    <p>
+                        Certificaciones de seguridad que el switch ha obtenido.
+                    </p>
+                    <h3>EMI/EMC</h3>
+                    <p>
+                        Electromagnetic Interference/Electromagnetic Compatibility <br>
+                        Certificaciones relacionadas con la interferencia electromagnética y la compatibilidad
+                        electromagnética del switch.
+                    </p>
+                    <div class="crearEspacio"></div>
+                </div>
+                
+            </div>
+
+            <div class="contenido" id="contenidoSoftware">
+                <h2>Software Features</h2>
+                <div class="titulosh3">
+                    <h3>L2 Features</h3>
+                    <p>
+                        Las características de la capa 2 admitidas por el switch, como STP, VLAN, etc.
+                    </p>
+                    <div class="crearEspacio"></div>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        Practica PAX 2Ev | RAB NNG JJRP MGB | Hoja Técnica Switch
+    </footer>
+</body>
+<script src="JS/script.js"></script>
+
+</html>

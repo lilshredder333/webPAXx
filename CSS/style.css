@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  overflow: none;
+  background-color: azure;
+  color: #0c273a;
+}
+
+/* navbar */
+
+.navbar {
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+
+}
+
+.main-nav {
+  list-style-type: none;
+  display: flex;
+  font-size: 14px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px 20px;
+}
+
+
+/* cabecera */
+
+header {
+  background-image: linear-gradient(#2376ae, transparent);
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+  text-align: center;
+  color: #0c273a;
+  
+}
+
+header:hover {
+  cursor: pointer;
+}
+
+/* Seccion principal */
+main {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#contenidoEspecificaciones {
+  width: 100vw;
+}
+
+#defHojaTec {
+  display: none;
+  color: #0d3b5c;
+  padding: 3%;
+}
+
+#contenedorBotones {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+button {
+  border: none;
+  margin: 1%;
+  border-radius: 10px;
+  background-image: linear-gradient(260deg, #c16ecf 10%, #2376ae 100%);
+  font-weight: 600;
+  padding: 2%;
+  color: hsl(292, 100%, 94%);
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  scale: 1.15;
+  transition: all ease-in-out 0.2s;
+}
+
+/* Contenido especificaciones */
+
+.contenido {
+  display: none;
+}
+
+.activo {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.titulosh3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  padding: 2%;
+  text-align: justify;
+}
+
+.titulosh3 h3 {
+  padding: 2%;
+}
+
+.titulosh3 h3:hover{
+  cursor: pointer;
+}
+
+.titulosh3 p {
+  padding: 2%;
+}
+
+.titulosh3 h3+p {
+  visibility: hidden;
+}
+
+.titulosh3 h3:hover+p {
+  cursor: pointer;
+  visibility: visible;
+}
+
+.crearEspacio {
+  padding: 0;
+  height: 70px;
+
+}
+ crea dos  unevos ficheros y lo pego todo
+
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 4px;
+  /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo del track (la barra en sí misma) */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  /* Color del fondo del track */
+}
+
+/* Estilo del thumb (el deslizador) */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  /* Color del deslizador */
+}
+
+/* Estilo del thumb al pasar el mouse sobre él */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Color del deslizador al pasar el mouse sobre él */
+}
+
+
+
+footer {
+  margin-top: 10%;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Estilos para dispositivos móviles y el menú hamburguesa */
+@media screen and (min-width: 768px) {
+  .navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .main-nav {
+    list-style-type: none;
+    display: flex;
+    margin-right: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .main-nav li {
+    text-align: center;
+    margin: 15px 20px;
+  }
+
+
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+
+  }
+
+  .navbar-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+}
