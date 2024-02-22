@@ -8,53 +8,62 @@
     <meta name="description" content="Hoja Técnica Especificaciones Switches">
     <link rel="icon" type="image/x-icon" href="IMG/FAVICON/cora-mediano.png">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>Hoja Técnica Switches</title>
 </head>
 
 
 <body>
-        <nav class="navbar">
-            <ul class="main-nav" id="js-menu">
-                <li>
-                    <a href="HTML/DES-1016D.html" class="nav-links">DES-1016D</a>
-                </li>
-                <li>
-                    <a href="HTML/DGS-1016S.html" class="nav-links">DGS-1016S</a>
-                </li>
-                <li>
-                    <a href="HTML/DGS-105GL.html" class="nav-links">DGS-105GL</a>
-                </li>
-                <li>
-                    <a href="HTML/DGS-1005D.html" class="nav-links">DGS-1005D</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <header onclick="definicion()">
-            <h1>¿Qué es una hoja técnica?</h1>
+    <nav class="navbar">
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="HTML/DES-1016D.html" class="nav-links">DES-1016D</a>
+            </li>
+            <li>
+                <a href="HTML/DGS-1016S.html" class="nav-links">DGS-1016S</a>
+            </li>
+            <li>
+                <a href="HTML/DGS-105GL.html" class="nav-links">DGS-105GL</a>
+            </li>
+            <li>
+                <a href="HTML/DGS-1005D.html" class="nav-links">DGS-1005D</a>
+            </li>
+        </ul>
+    </nav>
 
-        </header>
+    <header onclick="definicion()">
+        <h1>¿Qué es una hoja técnica?</h1>
+
+    </header>
 
     <main>
-        <h2 id="defHojaTec">Una hoja técnica es un documento que proporciona información detallada sobre las especificaciones,
+        <h2 id="defHojaTec">Una hoja técnica es un documento que proporciona información detallada sobre las
+            especificaciones,
             características y capacidades del dispositivo. Cada parte de la hoja técnica está destinada a proporcionar
             información específica sobre diferentes aspectos del dispositivo.
         </h2>
-        
+
         <div id="contenedorBotones">
             <h2>Apartados que nos podemos encontrar</h2>
-            <button onclick="muestra('contenidoGeneral')">Apartado General</button>
-            <button onclick="muestra('contenidoFuncionalidad')">Apartado Funcionalidad</button>
-            <button onclick="muestra('contenidoFisico')">Apartado Físico</button>
-            <button onclick="muestra('contenidoCertificaciones')">Apartado Certificaciones</button>
-            <button onclick="muestra('contenidoSoftware')">Apartado Software</button>
+            <button data-content="contenidoGeneral">Apartado General</button>
+            <button data-content="contenidoFuncionalidad">Apartado Funcionalidad</button>
+            <button data-content="contenidoFisico">Apartado Físico</button>
+            <button data-content="contenidoCertificaciones">Apartado Certificaciones</button>
+            <button data-content="contenidoSoftware">Apartado Software</button>
         </div>
-       
+
+
+        <!-- filtrar resultados -->
+        <input type="text" id="searchInput" placeholder="Buscar por título...">
+
         <div id="contenidoEspecificaciones">
             <div class="contenido" id="contenidoGeneral">
                 <h2>General</h2>
                 <div class="titulosh3">
+
                     <h3>Model Number</h3>
                     <p>
                         Un número de modelo es un identificador único asignado a cada versión de un dispositivo de
@@ -79,7 +88,7 @@
                         protocolos que cumple el dispositivo. Esto puede incluir estándares como IEEE 802.3 para
                         Ethernet, IEEE 802.11 para Wi-Fi, entre otros.
                     </p>
-                    <div class="crearEspacio"></div>      
+                    <div class="crearEspacio"></div>
                 </div>
 
             </div>
@@ -139,7 +148,7 @@
                     </p>
                     <div class="crearEspacio"></div>
                 </div>
-                
+
             </div>
 
             <div class="contenido" id="contenidoFisico">
@@ -190,7 +199,7 @@
                     </p>
                     <div class="crearEspacio"></div>
                 </div>
-                
+
             </div>
 
             <div class="contenido" id="contenidoCertificaciones">
@@ -208,7 +217,7 @@
                     </p>
                     <div class="crearEspacio"></div>
                 </div>
-                
+
             </div>
 
             <div class="contenido" id="contenidoSoftware">
@@ -220,7 +229,7 @@
                     </p>
                     <div class="crearEspacio"></div>
                 </div>
-                
+
 
             </div>
 

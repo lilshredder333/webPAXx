@@ -6,6 +6,31 @@
     text-decoration: none;
 }
 
+/* Estilo de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 4px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo del track (la barra en sí misma) */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    /* Color del fondo del track */
+}
+
+/* Estilo del thumb (el deslizador) */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    /* Color del deslizador */
+}
+
+/* Estilo del thumb al pasar el mouse sobre él */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color del deslizador al pasar el mouse sobre él */
+}
+
+
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -55,11 +80,11 @@ header {
     padding: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 150px;
     text-align: center;
     color: #0c273a;
     width: 100%;
+    justify-content: space-evenly;
 
 }
 
@@ -69,7 +94,7 @@ header:hover {
 
 main {
     padding: 2%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -77,11 +102,113 @@ main {
 
 #defHojaTec {
     padding: 2%;
-    display: none;
+    display: flex;
     flex-direction: column;
     text-align: justify;
+    width: 100%;
+    align-self: center;
 }
 
+#defHojaTec a{
+    align-self: center;
+    padding: 3%;
+    cursor: pointer;
+}
+
+#contenedorFotoSwitch{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    text-align: justify;
+    font-size: 14px;
+}
+
+#fotoSwitch{
+    height: 100px;
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#popup button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#contenedorFotoSwitch {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    text-align: justify;
+    font-size: 14px;
+}
+
+#contenedorFotoSwitch img {
+    height: 100px;
+}
+
+
+#contenedorFotoSwitch img:hover {
+    height: 100px;
+    cursor: pointer;
+}
+
+h2{
+    align-self: center;
+    padding: 3%;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid #2376ae;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    position: sticky;
+    top: 0;
+}
+
+/* Estilos del pop-up */
+#popUpExplicacion {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    z-index: 9999;
+}
 
 
 @media screen and (min-width: 768px) {
