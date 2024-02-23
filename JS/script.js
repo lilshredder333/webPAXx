@@ -1,94 +1,87 @@
-// Function to show content by ID
-function showContent(id) {
-    console.log("Mostrando el contenido con ID:", id);
+// Función para limpiar los resultados de búsqueda
+function clearSearchResults() {
+    console.log("Limpiando resultados de búsqueda...");
 
-    // Obtener el contenido deseado
-    var content = document.getElementById(id);
-
-    // Toggle activo class
-    content.classList.toggle('activo');
-
-    // Mostrar el contenido deseado
-    content.style.display = content.classList.contains('activo') ? 'block' : 'none';
-
-    // Ocultar todos los contenidos excepto el deseado
-    document.querySelectorAll('.contenido').forEach(function(item) {
-        if (item !== content && item.classList.contains('activo')) {
-            item.classList.remove('activo');
-            item.style.display = 'none';
-        }
+    // Mostrar todos los elementos h2 y h3
+    document.querySelectorAll('.contenido h2, .contenido h3').forEach(function(element) {
+        element.style.display = 'block';
     });
+
+    // Ocultar el contador de resultados
+    var resultCountSpan = document.getElementById('resultCount');
+    resultCountSpan.textContent = '';
+
+    console.log("Resultados de búsqueda limpios.");
 }
 
-// Function to handle click on title (h3)
-function handleTitleClick(title) {
-    // Obtener el párrafo asociado al título
-    var paragraph = title.nextElementSibling;
-
-    // Alternar la visibilidad del párrafo al hacer clic en el título
-    paragraph.style.display = paragraph.style.display === 'block' ? 'none' : 'block';
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Agregar event listener a todos los títulos h3 dentro de la clase 'titulosh3'
-    document.querySelectorAll('.titulosh3 h3').forEach(function(title) {
-        title.addEventListener('click', function() {
-            // Manejar el clic en el título
-            handleTitleClick(this);
-        });
-    });
-});
-
-// Función para filtrar los resultados
+// Función para filtrar los resultados de búsqueda
 function filterResults() {
-    var searchText = document.getElementById('searchInput').value.trim().toLowerCase();
+    var input = document.getElementById('searchInput').value.trim().toLowerCase();
+    var h3Elements = document.querySelectorAll('.titulosh3 h3');
+    var resultCount = 0;
 
-    // Si el campo de búsqueda está vacío, ocultar todos los contenidos y reiniciar el contador
-    if (searchText === '') {
-        document.querySelectorAll('.contenido').forEach(function(content) {
-            content.style.display = 'none';
-        });
-        document.getElementById('resultCount').textContent = ''; // Reiniciar el contador
+    // Si el input está vacío, mostrar todos los resultados y salir de la función
+    if (input === '') {
+        clearSearchResults();
         return;
     }
 
-    // Iterar sobre los contenidos
-    document.querySelectorAll('.contenido').forEach(function(content) {
-        var contentMatches = false; // Variable para rastrear si algún hijo del contenido coincide con la búsqueda
+    // Filtrar los resultados solo si se introduce al menos un carácter en el input
+    // Recorrer todos los h3 y mostrar solo los que coincidan con la búsqueda
+    h3Elements.forEach(function(h3) {
+        var h3Text = h3.textContent.toLowerCase();
+        var h2Element = h3.closest('.contenido').querySelector('h2');
 
-        // Iterar sobre los títulos h3 dentro del contenido
-        content.querySelectorAll('h3').forEach(function(title) {
-            var titleText = title.textContent.trim().toLowerCase();
+        // Verificar si el texto coincide con la búsqueda
+        if (h3Text.includes(input)) {
+            // Mostrar el h3 coincidente
+            h3.style.display = 'block';
 
-            // Verificar si el título coincide parcialmente con la búsqueda
-            if (titleText.includes(searchText)) {
-                contentMatches = true; // Si hay al menos un título que coincide, establecer contentMatches en true
-            }
-
-            // Mostrar u ocultar el título según si coincide con la búsqueda
-            title.style.display = titleText.includes(searchText) ? 'block' : 'none';
-        });
-
-        // Mostrar u ocultar el contenido según si coincide con la búsqueda
-        content.style.display = contentMatches ? 'block' : 'none';
+            // Incrementar el contador de resultados
+            resultCount++;
+        } else {
+            // Ocultar el h3 si no coincide con la búsqueda
+            h3.style.display = 'none';
+        }
     });
 
-    // Mostrar el contador de resultados
-    var resultCount = document.querySelectorAll('.contenido[style="display: block;"]').length;
-    document.getElementById('resultCount').textContent = 'Resultados encontrados: ' + resultCount;
+    // Mostrar u ocultar el h2 asociado dependiendo de si al menos un h3 coincide con la búsqueda
+    h3Elements.forEach(function(h3) {
+        var h2Element = h3.closest('.contenido').querySelector('h2');
+        var hasVisibleH3 = h3.closest('.contenido').querySelector('h3[style="display: block;"]');
+
+        if (hasVisibleH3) {
+            h2Element.style.display = 'block';
+        } else {
+            h2Element.style.display = 'none';
+        }
+    });
+
+    // Actualizar el contador de resultados
+    var resultCountSpan = document.getElementById('resultCount');
+    resultCountSpan.textContent = 'Resultados encontrados: ' + resultCount;
 }
 
-// Agregar evento de escucha al input de búsqueda para realizar la búsqueda en tiempo real
-document.getElementById('searchInput').addEventListener('input', filterResults);
 
 
 
+// Función para manejar la entrada en el input de búsqueda
+function handleSearchInput() {
+    // Filtrar los resultados de búsqueda solo si se introduce al menos un carácter en el input
+    var input = document.getElementById('searchInput').value.trim();
+    if (input.length > 0) {
+        filterResults();
+    } else {
+        clearSearchResults();
+    }
+}
 
-// Add event listeners to buttons to show content
-document.querySelectorAll('#contenedorBotones button').forEach(function(button) {
-    button.addEventListener('click', function() {
-        var contentId = this.dataset.content;
-        // Mostrar el contenido correspondiente al hacer clic en el botón
-        showContent(contentId);
+// Agregar manejador de eventos al input de búsqueda para realizar la búsqueda en tiempo real
+document.getElementById('searchInput').addEventListener('input', handleSearchInput);
+
+// Agregar manejadores de eventos a todos los títulos h3
+document.querySelectorAll('.titulosh3 h3').forEach(function(title) {
+    title.addEventListener('click', function() {
+        handleTitleClick(this);
     });
 });

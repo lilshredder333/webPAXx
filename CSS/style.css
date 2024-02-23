@@ -143,16 +143,10 @@ input{
   width: 100vw;
 }
 
-
 .contenido {
-  display: none;
+  display: block; 
 }
 
-.activo {
-  display: flex;
-  flex-direction: column;
-  padding: 2%;
-}
 
 .titulosh3 {
   display: flex;
@@ -166,6 +160,7 @@ input{
   padding: 2%;
   cursor: pointer; /* Cambiar el cursor al hacer clic */
 }
+
 
 .titulosh3 p {
   padding: 2%;

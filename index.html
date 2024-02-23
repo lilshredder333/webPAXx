@@ -63,17 +63,17 @@
             <div id="contenedorBotones">
                 <h2>Apartados que nos podemos encontrar</h2>
 
-                <button data-content="contenidoGeneral">Apartado General</button>
-                <button data-content="contenidoFuncionalidad">Apartado Funcionalidad</button>
-                <button data-content="contenidoFisico">Apartado Físico</button>
-                <button data-content="contenidoCertificaciones">Apartado Certificaciones</button>
-                <button data-content="contenidoSoftware">Apartado Software</button>
+                <p>Apartado General</p>
+                <p>Apartado Funcionalidad</p>
+                <p>Apartado Físico</p>
+                <p>Apartado Certificaciones</p>
+                <p>Apartado Software</p>
             </div>
         </div>
         <!-- filtrar resultados -->
         <div id="contenedorFiltro">
             <label for="searchInput">¡Busca aquí!</label>
-            <input type="text" id="searchInput" placeholder="ej. Transfer Rates">
+            <input type="text" id="searchInput" placeholder="ej. Transfer Rates" onkeyup="filterResults()">
 
         </div>
         <span id="resultCount"></span>
@@ -257,7 +257,7 @@
     </main>
 
     <footer>
-        Derechos de autor © 2024 Practica PAX 2Ev. Todos los derechos reservados. </footer>
+        Derechos de autor © 2024 Practica PAX 2Ev. |   <a href="#">Scroll to Top</a> </footer>
 </body>
 <script src="JS/script.js"></script>
 
