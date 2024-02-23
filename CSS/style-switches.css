@@ -88,9 +88,6 @@ header {
 
 }
 
-header:hover {
-    cursor: pointer;
-}
 
 main {
     padding: 2%;

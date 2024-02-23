@@ -34,30 +34,49 @@
         </ul>
     </nav>
 
-    <header onclick="definicion()">
+    <header>
         <h1>¿Qué es una hoja técnica?</h1>
-
-    </header>
-
-    <main>
-        <h2 id="defHojaTec">Una hoja técnica es un documento que proporciona información detallada sobre las
+        <h2>Documento que proporciona información detallada sobre las
             especificaciones,
             características y capacidades del dispositivo. Cada parte de la hoja técnica está destinada a proporcionar
             información específica sobre diferentes aspectos del dispositivo.
         </h2>
 
-        <div id="contenedorBotones">
-            <h2>Apartados que nos podemos encontrar</h2>
-            <button data-content="contenidoGeneral">Apartado General</button>
-            <button data-content="contenidoFuncionalidad">Apartado Funcionalidad</button>
-            <button data-content="contenidoFisico">Apartado Físico</button>
-            <button data-content="contenidoCertificaciones">Apartado Certificaciones</button>
-            <button data-content="contenidoSoftware">Apartado Software</button>
+    </header>
+
+    <main>
+        <div id="mediaPantalla">
+
+
+            <div id="informacionBasica">
+                <h2> ¿Estás buscando información técnica sobre conmutadores pero no te aclaras?
+                </h2>
+
+                <p>
+                </p>
+                <p>
+                    Este es tu sitio, nuestra web es súper interactiva. Busca el tópico
+                    del que quieres información y haz click sobre el para obtener una
+                    explicación, ¡así de fácil!
+                </p>
+            </div>
+            <div id="contenedorBotones">
+                <h2>Apartados que nos podemos encontrar</h2>
+
+                <button data-content="contenidoGeneral">Apartado General</button>
+                <button data-content="contenidoFuncionalidad">Apartado Funcionalidad</button>
+                <button data-content="contenidoFisico">Apartado Físico</button>
+                <button data-content="contenidoCertificaciones">Apartado Certificaciones</button>
+                <button data-content="contenidoSoftware">Apartado Software</button>
+            </div>
         </div>
-
-
         <!-- filtrar resultados -->
-        <input type="text" id="searchInput" placeholder="Buscar por título...">
+        <div id="contenedorFiltro">
+            <label for="searchInput">¡Busca aquí!</label>
+            <input type="text" id="searchInput" placeholder="ej. Transfer Rates">
+
+        </div>
+        <span id="resultCount"></span>
 
         <div id="contenidoEspecificaciones">
             <div class="contenido" id="contenidoGeneral">
@@ -238,8 +257,7 @@
     </main>
 
     <footer>
-        Practica PAX 2Ev | RAB NNG JJRP MGB | Hoja Técnica Switch
-    </footer>
+        Derechos de autor © 2024 Practica PAX 2Ev. Todos los derechos reservados. </footer>
 </body>
 <script src="JS/script.js"></script>
 

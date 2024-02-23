@@ -13,6 +13,8 @@ body {
   overflow: none;
   background-color: azure;
   color: #0c273a;
+  display: flex;
+  flex-direction: column;
 }
 
 /* navbar */
@@ -49,19 +51,21 @@ body {
 
 header {
   background-image: linear-gradient(#2376ae, transparent);
-  padding: 5%;
+  padding: 2%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 150px;
-  text-align: center;
   color: #0c273a;
-  
+  width: 100%;
+  align-items: center;
+  text-align: center;
 }
 
-header:hover {
-  cursor: pointer;
+header h2{
+  padding: 1%;
+  font-size: 13px;
 }
+
 
 /* Seccion principal */
 main {
@@ -73,20 +77,21 @@ main {
   min-height: 100vh;
 }
 
-#contenidoEspecificaciones {
-  width: 100vw;
+#mediaPantalla{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-#defHojaTec {
-  display: none;
-  color: #0d3b5c;
-  padding: 3%;
-}
 
 #contenedorBotones {
   display: flex;
   flex-direction: column;
-  margin: 2%;
+  padding: 2%;
+  justify-content: space-between;
+  height: 250px;
+  width: 500px;
 }
 
 button {
@@ -106,8 +111,38 @@ button:hover {
   transition: all ease-in-out 0.2s;
 }
 
+#informacionBasica{
+  padding: 2%;
+  height: 250px;
+  width: 500px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#informacionBasica p {
+
+  padding: 4%;
+}
+
+/* Filtro */
+#contenedorFiltro{
+  margin: 3%;
+}
+
+label{
+  padding: 5%;
+}
+
+input{
+  text-align: center;
+}
 
 /* Contenido especificaciones */
+
+#contenidoEspecificaciones {
+  width: 100vw;
+}
+
 
 .contenido {
   display: none;
@@ -129,23 +164,21 @@ button:hover {
 
 .titulosh3 h3 {
   padding: 2%;
-}
-
-.titulosh3 h3:hover{
-  cursor: pointer;
+  cursor: pointer; /* Cambiar el cursor al hacer clic */
 }
 
 .titulosh3 p {
   padding: 2%;
+  display: none; /* Ocultar los párrafos por defecto */
 }
 
-.titulosh3 h3+p {
-  visibility: hidden;
-}
+input{
+  border-bottom: 1px solidq;
+  margin: 1%;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 2%;
 
-.titulosh3 h3:hover+p {
-  cursor: pointer;
-  visibility: visible;
 }
 
 .crearEspacio {
