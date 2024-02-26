@@ -206,6 +206,11 @@ input{
   /* Color del deslizador al pasar el mouse sobre él */
 }
 
+#scrollTop{
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+}
 
 
 footer {

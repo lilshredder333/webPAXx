@@ -14,6 +14,8 @@ function clearSearchResults() {
     console.log("Resultados de búsqueda limpios.");
 }
 
+
+
 // Función para filtrar los resultados de búsqueda
 function filterResults() {
     var input = document.getElementById('searchInput').value.trim().toLowerCase();
@@ -63,6 +65,15 @@ function filterResults() {
 }
 
 
+
+// Function to handle click on title (h3)
+function handleTitleClick(title) {
+    // Obtener el párrafo asociado al título
+    var paragraph = title.nextElementSibling;
+
+    // Alternar la visibilidad del párrafo al hacer clic en el título
+    paragraph.style.display = paragraph.style.display === 'block' ? 'none' : 'block';
+}
 
 
 // Función para manejar la entrada en el input de búsqueda

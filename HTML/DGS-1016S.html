@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="IMG/FAVICON/cora-mediano.png">
     <link rel="stylesheet" href="../CSS/style-switches.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <title>Hoja Técnica Switches</title>
+    <title>Hoja Técnica DGS-1016S</title>
 </head>
 
 <body>
@@ -34,37 +34,35 @@
         </ul>
     </nav>
     <header>
-        <h1>DES-1016D</h1>
+        <h1>DGS-1016S</h1>
         <h2>Switch Ethernet no administrado de la marca D-Link.</h2>
     </header>
 
 
     <main>
         <div id="defHojaTec">
-            <h2>El DES-1016D es un switch Ethernet no administrado de la marca D-Link.</h2>
+            <h2>El DES-1016S es un switch Ethernet no administrado de la marca D-Link.</h2>
             <a target="_blank"
-                href="https://www.dlink.com/es/es/-/media/business_products/des/des-1016d/datasheet/des_1016d_h1_des_1024d_g1_datasheet_en_eu.pdf">Hoja
+                href="https://www.dlink.com/es/es/-/media/business_products/dgs/dgs-1016s/datasheet/dgs_1016s_datasheet_es.pdf">Hoja
                 Técnica
             </a>
 
             <div id="popup" style="display: none;">
                 <button onclick="cerrarFoto()">X</button>
-                <img id="imagenAmpliada">
+                <img id="imagenAmpliada2">
             </div>
             <div id="contenedorFotoSwitch">
 
                 <p>
-                    El modelo DES-1016D en particular es un switch de 16 puertos, lo que significa que tiene capacidad
-                    para
-                    conectar hasta 16 dispositivos mediante cables Ethernet. Estos switches son comúnmente utilizados en
-                    entornos domésticos, pequeñas oficinas u otras redes pequeñas donde se requiere conectar varios
-                    dispositivos, como computadoras, impresoras, cámaras IP, dispositivos de almacenamiento en red
-                    (NAS),
-                    entre
-                    otros.
+                    El DGS-1016S es un switch de red con capacidad para hasta 16 puertos Ethernet, lo que permite la
+                    conexión simultánea de múltiples dispositivos. Este tipo de switches son fundamentales en entornos
+                    empresariales, oficinas domésticas o redes de pequeñas y medianas empresas, ofreciendo una solución
+                    eficiente para gestionar la conectividad de dispositivos como computadoras, impresoras, servidores,
+                    y otros dispositivos de red. Su versatilidad y facilidad de uso lo convierten en una opción popular
+                    para mejorar la eficiencia y el rendimiento de la red.
 
                 </p>
-                <img onclick="mostrarFoto()" src="../IMG/switch1.png" id="fotoSwitch" alt="DES-1016D">
+                <img onclick="mostrarFoto('DGS-1016S')" src="../IMG/DGS-1016S.png" id="fotoSwitch" alt="DGS-1016S">
 
 
             </div>
@@ -75,14 +73,15 @@
 
         <table id="miTabla">
             <tr class="section">
-                <th colspan="2">Technical Specifications</th>
-            </tr>
-            <tr class="section">
                 <th colspan="2">General</th>
             </tr>
             <tr>
                 <td>Device Interfaces</td>
-                <td>16 ports LAN 10/100/1000 Mbps</td>
+                <td>
+                    <ul>
+                        <li>16 ports LAN 10/100/1000 Mbps</li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <td>Standards</td>
@@ -208,8 +207,14 @@
                 <td>Weight</td>
                 <td>
                     <ul>
-                        <li>DE-1016D: 1.06 kg (2.34 lbs)</li><br>
-                        <li>DES-1024D: 1.14 kg (2.51 lbs)</li><br>
+                        <li>DE-1016D:</li>
+                        <ul>
+                            <li>1.06 kg (2.34 lbs)</li><br>
+                        </ul>
+                        <li>DES-1024D:</li>
+                        <ul>
+                            <li>1.14 kg (2.51 lbs)</li><br>
+                        </ul>
                     </ul>
                 </td>
             </tr>
@@ -284,13 +289,20 @@
                 </td>
             </tr>
         </table>
-        
+
         <div id="popUpExplicacion">
+            <div id="nombreExplicacion"></div>
             <div id="contenidoExplicacion"></div>
-            <button id="cerrarPopUp">Cerrar</button>
         </div>
 
     </main>
+    <div class="crearEspacio"></div>
+    <footer>
+        Derechos de autor © 2024  | Practica PAX 2Ev
+    </footer>
+    <div id="scrollTop">
+        <a href="#"><img src="../IMG/scrollTop.png" alt="scrollTop"></a>
+    </div>
     <script src="../JS/switch1.js"></script>
 </body>
 

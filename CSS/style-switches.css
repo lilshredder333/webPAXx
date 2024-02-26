@@ -101,28 +101,29 @@ main {
     padding: 2%;
     display: flex;
     flex-direction: column;
-    text-align: justify;
     width: 100%;
     align-self: center;
 }
 
-#defHojaTec a{
+#defHojaTec a {
     align-self: center;
     padding: 3%;
     cursor: pointer;
 }
 
-#contenedorFotoSwitch{
+#contenedorFotoSwitch {
     display: flex;
     flex-direction: row;
     padding: 2%;
-    text-align: justify;
     font-size: 14px;
+    align-items: center;
 }
 
-#fotoSwitch{
-    height: 100px;
+#contenedorFotoSwitch p {
+    padding: 2%;
+    width: 60%;
 }
+
 
 #popup {
     position: fixed;
@@ -134,6 +135,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 #popup img {
@@ -170,7 +172,7 @@ main {
     cursor: pointer;
 }
 
-h2{
+h2 {
     align-self: center;
     padding: 3%;
 }
@@ -197,16 +199,64 @@ th {
 /* Estilos del pop-up */
 #popUpExplicacion {
     display: none;
+    width: 50%;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border: 1px solid black;
+    background-image: linear-gradient(260deg, #3e8ec3 0%, #d388e0 100%);
+    border: 1px solid #c16ecf;
     padding: 20px;
     z-index: 9999;
+    border-radius: 10px;
+    padding: 5%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
 }
 
+#nombre{
+    color: #0c273a;
+    font-size: 16px;
+    text-align: center;
+}
+
+#explicacion{
+    color: white;
+    font-size: 14px;
+    padding: 2%;
+}
+
+#cerrarPopUp{
+    border: solid 2px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding: 1%;
+    background-color: transparent;
+    border: none
+}
+
+#scrollTop{
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+}
+
+.crearEspacio{
+    height: 50px;
+}
+
+footer {
+    margin-top: 10%;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
 
 @media screen and (min-width: 768px) {
     .navbar {
