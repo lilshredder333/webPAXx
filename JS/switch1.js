@@ -75,6 +75,10 @@ const caracteristicas = [
         "Explicacion": "Especificación que define mecanismos para reducir el consumo de energía en dispositivos Ethernet cuando no están transmitiendo datos activamente, lo que ayuda a ahorrar energía en la red."
     },
     {
+        "Nombre": "IEEE 802.3az Energy Efficient Ethernet (EEE)",
+        "Explicacion": "Especificación que define mecanismos para reducir el consumo de energía en dispositivos Ethernet cuando no están transmitiendo datos activamente, lo que ayuda a ahorrar energía en la red."
+    },
+    {
         "Nombre": "32 Gbps",
         "Explicacion": "Indica la capacidad total de conmutación del switch, es decir, la cantidad máxima de datos que puede transferir simultáneamente a través de todos sus puertos en un segundo. En este caso, el switch tiene una capacidad de 32 gigabits por segundo (Gbps), lo que determina su rendimiento y capacidad para manejar grandes volúmenes de datos en la red."
     },
@@ -205,6 +209,30 @@ const caracteristicas = [
     {
         "Nombre": "Almacenamiento: -40 a 70 °C",
         "Explicacion": "Representa el rango de temperatura en el que el switch puede almacenarse de forma segura cuando no está en uso. En este caso, el switch puede almacenarse de manera segura en un rango de temperatura que va desde -40 a 70 grados Celsius."
+    },
+        {
+        "Nombre": "Ethernet:",
+        "Explicacion": "Es un estándar de tecnología de red de área local (LAN) que permite la comunicación entre dispositivos en una red. Utiliza un método de acceso al medio compartido, lo que significa que múltiples dispositivos pueden enviar datos a través del mismo canal de comunicación. Ethernet se utiliza ampliamente en redes locales cableadas y puede admitir diversas velocidades de transmisión de datos."
+    },
+    {
+        "Nombre": "Fast Ethernet:",
+        "Explicacion": "Es una evolución del estándar Ethernet que ofrece velocidades de transmisión de datos más rápidas. Fast Ethernet opera a una velocidad nominal de 100 megabits por segundo (Mbps), lo que es diez veces más rápido que el estándar Ethernet original."
+    },
+    {
+        "Nombre": "Gigabit Ethernet:",
+        "Explicacion": "Es una mejora significativa respecto a Fast Ethernet, ya que ofrece velocidades de transmisión de datos aún más rápidas. Opera a una velocidad nominal de 1 gigabit por segundo (Gbps), lo que es diez veces más rápido que Fast Ethernet y cien veces más rápido que Ethernet."
+    },
+    {
+        "Nombre": "14,880 pps por puerto",
+        "Explicacion": "Esta cifra representa la cantidad de paquetes por segundo (pps) que un puerto Ethernet puede manejar. Esto significa que, en un entorno Ethernet, un puerto puede enviar o recibir hasta 14,880 paquetes de datos por segundo."
+    },
+    {
+        "Nombre": "148,800 pps por puerto",
+        "Explicacion": "Similar al anterior, esta cifra representa la capacidad de manejo de paquetes por segundo por puerto en un entorno de Fast Ethernet. Indica que un puerto Fast Ethernet puede manejar hasta 148,800 paquetes de datos por segundo."
+    },
+    {
+        "Nombre": "1,488,000 pps por puerto",
+        "Explicacion": "Esta cifra representa la capacidad de manejo de paquetes por segundo por puerto en un entorno de Gigabit Ethernet. Indica que un puerto Gigabit Ethernet puede manejar hasta 1,488,000 paquetes de datos por segundo."
     },
     {
         "Nombre": "Funcionamiento: 10 % a 90 % sin condensación",

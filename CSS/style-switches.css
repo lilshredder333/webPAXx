@@ -199,6 +199,10 @@ th {
     top: 0;
 }
 
+table li{
+    cursor: pointer;
+}
+
 /* Estilos del pop-up */
 #popUpExplicacion {
     display: none;
@@ -234,7 +238,8 @@ th {
     right: 5%;
     padding: 1%;
     background-color: transparent;
-    border: none
+    border: none;
+    color: white;
 }
 
 #scrollTop {
