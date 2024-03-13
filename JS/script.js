@@ -3,7 +3,7 @@ function clearSearchResults() {
     console.log("Limpiando resultados de búsqueda...");
 
     // Mostrar todos los elementos h2 y h3
-    document.querySelectorAll('.contenido h2, .contenido h3').forEach(function(element) {
+    document.querySelectorAll('.contenido h2, .contenido h3').forEach(function (element) {
         element.style.display = 'block';
     });
 
@@ -30,7 +30,7 @@ function filterResults() {
 
     // Filtrar los resultados solo si se introduce al menos un carácter en el input
     // Recorrer todos los h3 y mostrar solo los que coincidan con la búsqueda
-    h3Elements.forEach(function(h3) {
+    h3Elements.forEach(function (h3) {
         var h3Text = h3.textContent.toLowerCase();
         var h2Element = h3.closest('.contenido').querySelector('h2');
 
@@ -48,7 +48,7 @@ function filterResults() {
     });
 
     // Mostrar u ocultar el h2 asociado dependiendo de si al menos un h3 coincide con la búsqueda
-    h3Elements.forEach(function(h3) {
+    h3Elements.forEach(function (h3) {
         var h2Element = h3.closest('.contenido').querySelector('h2');
         var hasVisibleH3 = h3.closest('.contenido').querySelector('h3[style="display: block;"]');
 
@@ -91,8 +91,25 @@ function handleSearchInput() {
 document.getElementById('searchInput').addEventListener('input', handleSearchInput);
 
 // Agregar manejadores de eventos a todos los títulos h3
-document.querySelectorAll('.titulosh3 h3').forEach(function(title) {
-    title.addEventListener('click', function() {
+document.querySelectorAll('.titulosh3 h3').forEach(function (title) {
+    title.addEventListener('click', function () {
         handleTitleClick(this);
     });
+});
+
+/* easter egg */
+let mouseMoves = [];
+const secretSequence = ['ArrowUp', 'ArrowDown', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+const easterEgg = document.getElementById('easter-egg');
+
+document.addEventListener('keydown', function (event) {
+    // Add key pressed to mouseMoves array
+    mouseMoves.push(event.key);
+    // Check if the sequence matches the secret sequence
+    if (JSON.stringify(mouseMoves) === JSON.stringify(secretSequence)) {
+        // Show the Easter egg
+        easterEgg.style.display = 'block';
+        // Clear the array for the next sequence
+        mouseMoves = [];
+    }
 });

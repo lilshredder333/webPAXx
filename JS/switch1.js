@@ -844,3 +844,20 @@ document.querySelectorAll('#miTabla li').forEach(item => {
         }
     });
 });
+
+/* easter egg */
+let mouseMoves = [];
+const secretSequence = ['ArrowUp', 'ArrowDown', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+const easterEgg = document.getElementById('easter-egg');
+
+document.addEventListener('keydown', function (event) {
+    // Add key pressed to mouseMoves array
+    mouseMoves.push(event.key);
+    // Check if the sequence matches the secret sequence
+    if (JSON.stringify(mouseMoves) === JSON.stringify(secretSequence)) {
+        // Show the Easter egg
+        easterEgg.style.display = 'block';
+        // Clear the array for the next sequence
+        mouseMoves = [];
+    }
+});
