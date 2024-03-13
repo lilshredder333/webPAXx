@@ -491,203 +491,310 @@ const caracteristicas = [
     },
     /*DGS-105GL/DGS108GL*/
     {
+        "Nombre": "5 puertos LAN 10/100/1000 Mbps",
+        "Explicacion": "Este dispositivo cuenta con 5 puertos LAN que admiten velocidades de 10, 100 y 1000 megabits por segundo (Mbps). Esto proporciona flexibilidad para conectar dispositivos con diferentes velocidades de red a través de cables Ethernet."
+    },
+    {
+        "Nombre": "IEEE 802.3 10BASE-T",
+        "Explicacion": "Se refiere al estándar IEEE que define Ethernet a 10 Mbps sobre cable de par trenzado (10BASE-T), que es uno de los primeros estándares de Ethernet."
+    },
+    {
+        "Nombre": "IEEE 802.3u 100BASE-TX",
+        "Explicacion": "Indica el estándar IEEE que define Fast Ethernet a 100 Mbps sobre cable de par trenzado (100BASE-TX), que ofrece velocidades de transmisión más rápidas que Ethernet tradicional."
+    },
+    {
+        "Nombre": "IEEE 802.3ab 1000BASE-T",
+        "Explicacion": "Este estándar define Gigabit Ethernet a 1000 Mbps sobre cable de par trenzado (1000BASE-T), que permite velocidades de transmisión aún más rápidas en comparación con Fast Ethernet."
+    },
+    {
+        "Nombre": "Control de flujo IEEE 802.3x",
+        "Explicacion": "Se refiere al mecanismo de control de flujo definido por el estándar IEEE 802.3x, que ayuda a prevenir la congestión en la red regulando el flujo de datos. Esto es importante para mantener un rendimiento óptimo en entornos de red congestionados."
+    },
+    {
+        "Nombre": "IEEE 802.1p QoS",
+        "Explicacion": "Este estándar IEEE proporciona capacidades de Calidad de Servicio (QoS) para la red. Permite la priorización del tráfico de red para garantizar un rendimiento óptimo de las aplicaciones sensibles al retardo, como la voz y el video, al asignar etiquetas de prioridad a los paquetes de datos."
+    },
+    {
+        "Nombre": "10 Gbps, carcasa metálica",
+        "Explicacion": "Indica la velocidad de transmisión del switch, que es de 10 gigabits por segundo (Gbps), y la carcasa del dispositivo está construida con material metálico, lo que proporciona protección adicional y disipación de calor eficiente."
+    },
+    {
+        "Nombre": "Guardar y enviar",
+        "Explicacion": "Se refiere al método de conmutación de paquetes utilizado por el switch. En este método, el switch almacena y verifica cada paquete de datos antes de reenviarlo al destino, lo que garantiza una transmisión de datos precisa y confiable."
+    },
+    {
+        "Nombre": "2K",
+        "Explicacion": "Indica el tamaño de la tabla de direcciones MAC del switch, que puede contener hasta 2000 entradas. Esta tabla se utiliza para almacenar las direcciones MAC de los dispositivos conectados a la red, permitiendo al switch aprender y enrutar los paquetes de datos de manera eficiente."
+    },
+    {
+        "Nombre": "Ethernet: 14.880 pps por puerto",
+        "Explicacion": "Indica que cada puerto Ethernet puede procesar hasta 14.880 paquetes por segundo (pps), lo que proporciona una capacidad de procesamiento adecuada para redes de velocidad estándar."
+    },
+    {
+        "Nombre": "Fast Ethernet: 148.800 pps por puerto",
+        "Explicacion": "Esto significa que cada puerto de Fast Ethernet puede manejar hasta 148.800 paquetes por segundo (pps), lo que permite una mayor velocidad de procesamiento en comparación con Ethernet estándar."
+    },
+    {
+        "Nombre": "Gigabit Ethernet: 1.488.000 pps por puerto",
+        "Explicacion": "Indica que cada puerto de Gigabit Ethernet puede manejar hasta 1.488.000 paquetes por segundo (pps), lo que permite una transmisión de datos extremadamente rápida en redes de alta velocidad."
+    },
+    {
+        "Nombre": "Por puerto: Enlace/Actividad",
+        "Explicacion": "Significa que cada puerto del dispositivo está equipado con indicadores LED que muestran el estado del enlace (si está conectado) y la actividad de la red, lo que proporciona una rápida visualización del estado de conexión y la actividad de datos en cada puerto."
+    },
+    {
+        "Nombre": "Por dispositivo Alimentación",
+        "Explicacion": "Indica que el dispositivo proporciona alimentación a los dispositivos conectados a través de sus puertos, lo que permite la operación de dispositivos que requieren alimentación a través de Ethernet, como teléfonos IP o cámaras de red."
+    },
+    {
+        "Nombre": "100 x 64 x 24 mm",
+        "Explicacion": "Estas son las dimensiones físicas del dispositivo, especificadas en milímetros (mm) para su longitud, anchura y altura, respectivamente. Esto proporciona información sobre el tamaño compacto del dispositivo, lo que facilita su instalación en espacios reducidos.."
+    },
+    {
+        "Nombre": "160 g",
+        "Explicacion": "Indica el peso del dispositivo, medido en gramos (g). Es útil para evaluar la portabilidad del dispositivo y para garantizar que no exceda los límites de peso en aplicaciones de montaje o transporte."
+    },
+    {
+        "Nombre": "5V DC / 1A",
+        "Explicacion": "Esta es la especificación de la fuente de alimentación del dispositivo, que requiere una entrada de corriente continua de 5 voltios con una corriente de 1 amperio (A). Proporciona información sobre los requisitos de energía del dispositivo y la compatibilidad con diferentes fuentes de alimentación."
+    },
+    {
+        "Nombre": "Máximo: 3,55 vatios",
+        "Explicacion": "Indica el consumo máximo de energía del dispositivo, que es de 3,55 vatios. Esto es importante para asegurar que la fuente de alimentación pueda suministrar suficiente energía para el funcionamiento del dispositivo sin exceder sus límites."
+    },
+    {
+        "Nombre": "Funcionamiento: 0 a 40 °C",
+        "Explicacion": "Indica el rango de temperatura en el que el dispositivo puede operar de manera segura, que va desde 0°C hasta 40°C. Es importante para garantizar el rendimiento y la fiabilidad del dispositivo en diferentes entornos de temperatura."
+    },
+    {
+        "Nombre": "Almacenamiento: -10 a 70 °C",
+        "Explicacion": "Representa el rango de temperatura en el que el dispositivo puede ser almacenado de manera segura, que va desde -10°C hasta 70°C. Esto es importante para garantizar la integridad y el rendimiento del dispositivo cuando no está en uso y durante el almacenamiento a largo plazo."
+    },
+    {
+        "Nombre": "Funcionamiento: 10 % a 90 % sin condensación",
+        "Explicacion": "Indica el rango de humedad relativa en el que el dispositivo puede operar de manera segura, desde un mínimo del 10% hasta un máximo del 90%, sin que se produzca condensación en su interior. La condensación puede afectar negativamente el funcionamiento de los componentes."
+    },
+    {
+        "Nombre": "Almacenamiento: 5% a 95% sin condensación",
+        "Explicacion": "Similar al punto anterior, pero se refiere al rango de humedad relativa en el que el dispositivo puede ser almacenado de manera segura sin riesgo de condensación en su interior, desde un mínimo del 5% hasta un máximo del 95%."
+    },
+    {
+        "Nombre": "1.455.562 horas",
+        "Explicacion": "Esta cifra representa la vida útil estimada del dispositivo en horas, lo que significa que se espera que funcione de manera confiable durante aproximadamente 1.455.562 horas antes de requerir mantenimiento o reemplazo."
+    },
+    {
+        "Nombre": "12,11 BTU/h",
+        "Explicacion": "La unidad BTU/h (British Thermal Unit per hour) representa la cantidad de calor que el dispositivo puede disipar por hora, en este caso, 12,11 BTU/h. Esto es importante para el diseño de sistemas de refrigeración y para evitar el sobrecalentamiento del dispositivo durante su funcionamiento."
+    },
+    {
+        "Nombre": "CE",
+        "Explicacion": "Indica que el dispositivo cumple con los requisitos de seguridad y compatibilidad electromagnética (EMC) para su comercialización en el Espacio Económico Europeo (EEE)."
+    },
+    {
+        "Nombre": "FCC",
+        "Explicacion": "Significa que el dispositivo cumple con los estándares de la Comisión Federal de Comunicaciones (FCC) de los Estados Unidos."
+    },
+    {
+        "Nombre": "RoHS",
+        "Explicacion": "Este marcado indica que el dispositivo cumple con la Directiva de Restricción de Sustancias Peligrosas (RoHS) de la Unión Europea, lo que significa que está libre de ciertas sustancias peligrosas, como plomo, mercurio, cadmio, cromo hexavalente, PBB y PBDE."
+    }, 
+    /* DGS-1005D*/
+    {
         "Nombre": "5 x Gigabit Ethernet LAN ports, 1 x power connector",
-        "Descripcion": "El dispositivo cuenta con 5 puertos LAN Gigabit Ethernet para conexiones de red de alta velocidad, además de un conector de alimentación para suministrar energía al dispositivo. Esto permite conectar múltiples dispositivos a alta velocidad a la red y alimentar el dispositivo de manera adecuada."
+        "Explicacion": "Indica que el dispositivo cuenta con 5 puertos LAN Gigabit Ethernet para conexiones de red de alta velocidad, además de un conector de alimentación para suministrar energía al dispositivo. Esto permite conectar múltiples dispositivos a alta velocidad a la red y alimentar el dispositivo de manera adecuada."
     },
     {
         "Nombre": "IEEE 802.3 10BASE-T Ethernet",
-        "Descripcion": "Se refiere al estándar IEEE que define Ethernet a 10 Mbps sobre cable de par trenzado (10BASE-T), uno de los primeros estándares de Ethernet."
+        "Explicacion": "Se refiere al estándar IEEE que define Ethernet a 10 Mbps sobre cable de par trenzado (10BASE-T), uno de los primeros estándares de Ethernet."
     },
     {
         "Nombre": "IEEE 802.3u 100BASE-TX Fast Ethernet",
-        "Descripcion": "Indica el estándar IEEE que define Fast Ethernet a 100 Mbps sobre cable de par trenzado (100BASE-TX), ofreciendo velocidades de transmisión más rápidas que Ethernet tradicional."
+        "Explicacion": "Indica el estándar IEEE que define Fast Ethernet a 100 Mbps sobre cable de par trenzado (100BASE-TX), ofreciendo velocidades de transmisión más rápidas que Ethernet tradicional."
     },
     {
         "Nombre": "IEEE 802.3ab 1000BASE-T Gigabit Ethernet",
-        "Descripcion": "Este estándar define Gigabit Ethernet a 1000 Mbps sobre cable de par trenzado (1000BASE-T), permitiendo velocidades de transmisión aún más rápidas en comparación con Fast Ethernet."
+        "Explicacion": "Este estándar define Gigabit Ethernet a 1000 Mbps sobre cable de par trenzado (1000BASE-T), permitiendo velocidades de transmisión aún más rápidas en comparación con Fast Ethernet."
     },
     {
         "Nombre": "ANSI/IEEE 802.3 NWay auto-negotiation",
-        "Descripcion": "Este estándar permite que los dispositivos Ethernet negocien automáticamente la velocidad de conexión óptima y otros parámetros de configuración cuando se conectan entre sí. Esto asegura una comunicación eficiente y compatible entre dispositivos de diferentes velocidades y capacidades."
+        "Explicacion": "Este estándar permite que los dispositivos Ethernet negocien automáticamente la velocidad de conexión óptima y otros parámetros de configuración cuando se conectan entre sí. Esto asegura una comunicación eficiente y compatible entre dispositivos de diferentes velocidades y capacidades."
     },
     {
         "Nombre": "IEEE 802.3x Flow Control",
-        "Descripcion": "Es un mecanismo utilizado en Ethernet para controlar el flujo de datos entre dispositivos. Permite a un dispositivo enviar señales de control a su pareja para detener temporalmente la transmisión de datos si el búfer del receptor está lleno, evitando así la congestión de la red y la pérdida de paquetes."
+        "Explicacion": "Es un mecanismo utilizado en Ethernet para controlar el flujo de datos entre dispositivos. Permite a un dispositivo enviar señales de control a su pareja para detener temporalmente la transmisión de datos si el búfer del receptor está lleno, evitando así la congestión de la red y la pérdida de paquetes."
     },
     {
         "Nombre": "IEEE 802.3az Energy-Efficient Ethernet (EEE)",
-        "Descripcion": "Este estándar ayuda a reducir el consumo de energía de los dispositivos Ethernet al poner en modo de bajo consumo durante períodos de inactividad de la red. Esto ayuda a ahorrar energía y reducir los costos operativos sin comprometer el rendimiento de la red."
+        "Explicacion": "Este estándar ayuda a reducir el consumo de energía de los dispositivos Ethernet al poner en modo de bajo consumo durante períodos de inactividad de la red. Esto ayuda a ahorrar energía y reducir los costos operativos sin comprometer el rendimiento de la red."
     },
     {
         "Nombre": "Green Ethernet",
-        "Descripcion": "Es un término utilizado para describir tecnologías y prácticas diseñadas para hacer que las redes Ethernet sean más respetuosas con el medio ambiente al reducir su consumo de energía. Esto puede incluir el uso de estándares como IEEE 802.3az EEE y la implementación de funciones de ahorro de energía en dispositivos de red."
+        "Explicacion": "Es un término utilizado para describir tecnologías y prácticas diseñadas para hacer que las redes Ethernet sean más respetuosas con el medio ambiente al reducir su consumo de energía. Esto puede incluir el uso de estándares como IEEE 802.3az EEE y la implementación de funciones de ahorro de energía en dispositivos de red."
     },
     {
         "Nombre": "10 Gbps switching fabric",
-        "Descripcion": "Indica la capacidad de conmutación del switch, que es de 10 gigabits por segundo (Gbps). Esto determina la cantidad de datos que el switch puede procesar y transmitir en un segundo, lo que proporciona una alta velocidad y rendimiento para las redes de alta demanda de datos."
+        "Explicacion": "Indica la capacidad de conmutación del switch, que es de 10 gigabits por segundo (Gbps). Esto determina la cantidad de datos que el switch puede procesar y transmitir en un segundo, lo que proporciona una alta velocidad y rendimiento para las redes de alta demanda de datos."
     },
     {
         "Nombre": "Auto MDI/MDIX crossover for all ports",
-        "Descripcion": "Esta característica permite que el switch ajuste automáticamente su configuración de conexión para cada puerto, lo que significa que no se necesita un cable de conexión específico (crossover o directo) para conectar dispositivos entre sí. Esto simplifica la instalación y la conectividad de la red al eliminar la necesidad de preocuparse por el tipo de cable utilizado."
+        "Explicacion": "Esta característica permite que el switch ajuste automáticamente su configuración de conexión para cada puerto, lo que significa que no se necesita un cable de conexión específico (crossover o directo) para conectar dispositivos entre sí. Esto simplifica la instalación y la conectividad de la red al eliminar la necesidad de preocuparse por el tipo de cable utilizado."
     },
     {
         "Nombre": "Secure store-and-forward switching scheme",
-        "Descripcion": "Este esquema de conmutación garantiza que los paquetes de datos se almacenen y verifiquen completamente antes de ser reenviados al destino. Esto ayuda a prevenir la transmisión de paquetes corruptos o maliciosos, lo que mejora la seguridad y la integridad de la red."
+        "Explicacion": "Este esquema de conmutación garantiza que los paquetes de datos se almacenen y verifiquen completamente antes de ser reenviados al destino. Esto ayuda a prevenir la transmisión de paquetes corruptos o maliciosos, lo que mejora la seguridad y la integridad de la red."
     },
     {
         "Nombre": "Full/half-duplex for Ethernet/Fast Ethernet speeds",
-        "Descripcion": "Esta característica permite que los puertos del switch operen en modo full-duplex (transmisión y recepción simultáneas) o half-duplex (transmisión o recepción en un momento dado) dependiendo de la velocidad de Ethernet o Fast Ethernet. Esto proporciona flexibilidad y optimización del rendimiento de la red."
+        "Explicacion": "Esta característica permite que los puertos del switch operen en modo full-duplex (transmisión y recepción simultáneas) o half-duplex (transmisión o recepción en un momento dado) dependiendo de la velocidad de Ethernet o Fast Ethernet. Esto proporciona flexibilidad y optimización del rendimiento de la red."
     },
     {
         "Nombre": "IEEE 802.3x Flow Control",
-        "Descripcion": "Es un mecanismo utilizado en Ethernet para controlar el flujo de datos entre dispositivos. Permite a un dispositivo enviar señales de control a su pareja para detener temporalmente la transmisión de datos si el búfer del receptor está lleno, evitando así la congestión de la red y la pérdida de paquetes."
+        "Explicacion": "Es un mecanismo utilizado en Ethernet para controlar el flujo de datos entre dispositivos. Permite a un dispositivo enviar señales de control a su pareja para detener temporalmente la transmisión de datos si el búfer del receptor está lleno, evitando así la congestión de la red y la pérdida de paquetes."
     },
     {
         "Nombre": "Supports 9KB Jumbo Frame",
-        "Descripcion": "Esta característica permite al switch admitir paquetes de datos más grandes, conocidos como Jumbo Frames, con un tamaño de hasta 9 kilobytes (KB). El uso de Jumbo Frames puede mejorar la eficiencia de la red al reducir la sobrecarga de procesamiento y aumentar el rendimiento en aplicaciones que transfieren grandes cantidades de datos."
+        "Explicacion": "Esta característica permite al switch admitir paquetes de datos más grandes, conocidos como Jumbo Frames, con un tamaño de hasta 9 kilobytes (KB). El uso de Jumbo Frames puede mejorar la eficiencia de la red al reducir la sobrecarga de procesamiento y aumentar el rendimiento en aplicaciones que transfieren grandes cantidades de datos."
     },
     {
         "Nombre": "Supports IEEE 802.1p QoS",
-        "Descripcion": "Indica que el switch es compatible con el estándar IEEE 802.1p, que define un sistema de Calidad de Servicio (QoS) basado en prioridades para el tráfico de red. Esto permite la priorización del tráfico de red para aplicaciones sensibles al retardo, como voz y video, garantizando un rendimiento óptimo de la red."
+        "Explicacion": "Indica que el switch es compatible con el estándar IEEE 802.1p, que define un sistema de Calidad de Servicio (QoS) basado en prioridades para el tráfico de red. Esto permite la priorización del tráfico de red para aplicaciones sensibles al retardo, como voz y video, garantizando un rendimiento óptimo de la red."
     },
     {
         "Nombre": "10 Mbps (half duplex)",
-        "Descripcion": "Indica la velocidad de transmisión de datos en una red Ethernet en modo half-duplex, donde la transmisión de datos se realiza en un solo sentido a la vez, a una velocidad de 10 megabits por segundo (Mbps)."
+        "Explicacion": "Indica la velocidad de transmisión de datos en una red Ethernet en modo half-duplex, donde la transmisión de datos se realiza en un solo sentido a la vez, a una velocidad de 10 megabits por segundo (Mbps)."
     },
     {
         "Nombre": "20 Mbps (full duplex)",
-        "Descripcion": "Representa la velocidad de transmisión de datos en una red Ethernet en modo full-duplex, donde la transmisión de datos se realiza en ambos sentidos simultáneamente, a una velocidad de 20 Mbps."
+        "Explicacion": "Representa la velocidad de transmisión de datos en una red Ethernet en modo full-duplex, donde la transmisión de datos se realiza en ambos sentidos simultáneamente, a una velocidad de 20 Mbps."
     },
     {
         "Nombre": "100 Mbps (half duplex)",
-        "Descripcion": "Indica la velocidad de transmisión de datos en una red Fast Ethernet en modo half-duplex, donde la transmisión de datos se realiza en un solo sentido a la vez, a una velocidad de 100 Mbps."
+        "Explicacion": "Indica la velocidad de transmisión de datos en una red Fast Ethernet en modo half-duplex, donde la transmisión de datos se realiza en un solo sentido a la vez, a una velocidad de 100 Mbps."
     },
     {
         "Nombre": "200 Mbps (full duplex)",
-        "Descripcion": "Representa la velocidad de transmisión de datos en una red Fast Ethernet en modo full-duplex, donde la transmisión de datos se realiza en ambos sentidos simultáneamente, a una velocidad de 200 Mbps."
+        "Explicacion": "Representa la velocidad de transmisión de datos en una red Fast Ethernet en modo full-duplex, donde la transmisión de datos se realiza en ambos sentidos simultáneamente, a una velocidad de 200 Mbps."
     },
     {
         "Nombre": "2000 Mbps (full duplex)",
-        "Descripcion": "Indica la velocidad de transmisión de datos en una red Gigabit Ethernet en modo full-duplex, donde la transmisión de datos se realiza en ambos sentidos simultáneamente, a una velocidad de 2000 Mbps, que equivale a 2 gigabits por segundo (Gbps)."
+        "Explicacion": "Indica la velocidad de transmisión de datos en una red Gigabit Ethernet en modo full-duplex, donde la transmisión de datos se realiza en ambos sentidos simultáneamente, a una velocidad de 2000 Mbps, que equivale a 2 gigabits por segundo (Gbps)."
     },
     {
         "Nombre": "Store-and-forward",
-        "Descripcion": "Es un método de conmutación de paquetes utilizado por el switch, donde cada paquete de datos se almacena y verifica completamente antes de ser reenviado al destino. Esto asegura una transmisión precisa y confiable de los datos."
+        "Explicacion": "Es un método de conmutación de paquetes utilizado por el switch, donde cada paquete de datos se almacena y verifica completamente antes de ser reenviado al destino. Esto asegura una transmisión precisa y confiable de los datos."
     },
     {
         "Nombre": "2 K",
-        "Descripcion": "Indica el tamaño de la tabla de direcciones MAC del switch, que puede contener hasta 2000 entradas. Esta tabla se utiliza para almacenar las direcciones MAC de los dispositivos conectados a la red, permitiendo al switch aprender y enrutar los paquetes de datos de manera eficiente."
+        "Explicacion": "Indica el tamaño de la tabla de direcciones MAC del switch, que puede contener hasta 2000 entradas. Esta tabla se utiliza para almacenar las direcciones MAC de los dispositivos conectados a la red, permitiendo al switch aprender y enrutar los paquetes de datos de manera eficiente."
     },
     {
         "Nombre": "Automatic Update",
-        "Descripcion": "Indica la capacidad del dispositivo para realizar actualizaciones automáticas de firmware o software, lo que garantiza que siempre esté utilizando la versión más reciente del sistema operativo o de cualquier otro software relevante."
+        "Explicacion": "Indica la capacidad del dispositivo para realizar actualizaciones automáticas de firmware o software, lo que garantiza que siempre esté utilizando la versión más reciente del sistema operativo o de cualquier otro software relevante."
     },
     {
         "Nombre": "Ethernet: 14,880 pps per port",
-        "Descripcion": "Se refiere a la cantidad máxima de paquetes por segundo (pps) que cada puerto Ethernet puede procesar, lo que determina la capacidad de manejo de tráfico de la red a una velocidad de 10 Mbps."
+        "Explicacion": "Se refiere a la cantidad máxima de paquetes por segundo (pps) que cada puerto Ethernet puede procesar, lo que determina la capacidad de manejo de tráfico de la red a una velocidad de 10 Mbps."
     },
     {
         "Nombre": "Fast Ethernet: 148,800 pps per port",
-        "Descripcion": "Representa la cantidad máxima de paquetes por segundo (pps) que cada puerto Fast Ethernet puede procesar, lo que determina la capacidad de manejo de tráfico de la red a una velocidad de 100 Mbps."
+        "Explicacion": "Representa la cantidad máxima de paquetes por segundo (pps) que cada puerto Fast Ethernet puede procesar, lo que determina la capacidad de manejo de tráfico de la red a una velocidad de 100 Mbps."
     },
     {
         "Nombre": "Gigabit Ethernet: 1,488,000 pps per port",
-        "Descripcion": "Indica la cantidad máxima de paquetes por segundo (pps) que cada puerto Gigabit Ethernet puede procesar, lo que determina la capacidad de manejo de tráfico de la red a una velocidad de 1000 Mbps."
+        "Explicacion": "Indica la cantidad máxima de paquetes por segundo (pps) que cada puerto Gigabit Ethernet puede procesar, lo que determina la capacidad de manejo de tráfico de la red a una velocidad de 1000 Mbps."
     },
     {
         "Nombre": "128 KB",
-        "Descripcion": "Especifica la capacidad de memoria del dispositivo, que en este caso es de 128 kilobytes (KB). Esta memoria se utiliza para almacenar datos temporales, tablas de direcciones MAC y otros datos necesarios para el funcionamiento del dispositivo."
+        "Explicacion": "Especifica la capacidad de memoria del dispositivo, que en este caso es de 128 kilobytes (KB). Esta memoria se utiliza para almacenar datos temporales, tablas de direcciones MAC y otros datos necesarios para el funcionamiento del dispositivo."
     },
     {
         "Nombre": "Per port: Link/Activity",
-        "Descripcion": "Significa que cada puerto del dispositivo está equipado con indicadores LED que muestran el estado de enlace (si está conectado) y la actividad de la red, lo que facilita la monitorización y el diagnóstico de la conexión de red en cada puerto."
+        "Explicacion": "Significa que cada puerto del dispositivo está equipado con indicadores LED que muestran el estado de enlace (si está conectado) y la actividad de la red, lo que facilita la monitorización y el diagnóstico de la conexión de red en cada puerto."
     },
     {
         "Nombre": "Per device: Power",
-        "Descripcion": "Indica que el dispositivo está equipado con un indicador LED que muestra el estado de alimentación, lo que permite verificar fácilmente si el dispositivo está encendido o apagado."
+        "Explicacion": "Indica que el dispositivo está equipado con un indicador LED que muestra el estado de alimentación, lo que permite verificar fácilmente si el dispositivo está encendido o apagado."
     },
     {
         "Nombre": "Auto MDI/MDIX for all ports",
-        "Descripcion": "Esta característica permite que el dispositivo ajuste automáticamente su configuración de conexión para cada puerto, lo que significa que no se necesita un cable de conexión específico (crossover o directo) para conectar dispositivos entre sí. Esto simplifica la instalación y la conectividad de la red al eliminar la necesidad de preocuparse por el tipo de cable utilizado."
+        "Explicacion": "Esta característica permite que el dispositivo ajuste automáticamente su configuración de conexión para cada puerto, lo que significa que no se necesita un cable de conexión específico (crossover o directo) para conectar dispositivos entre sí. Esto simplifica la instalación y la conectividad de la red al eliminar la necesidad de preocuparse por el tipo de cable utilizado."
     },
     {
         "Nombre": "94 x 75 x 22.45 mm",
-        "Descripcion": "Estas son las dimensiones físicas del dispositivo, especificadas en milímetros (mm) para su longitud, anchura y altura, respectivamente. Esto proporciona información sobre el tamaño compacto del dispositivo, lo que facilita su instalación en espacios reducidos."
+        "Explicacion": "Estas son las dimensiones físicas del dispositivo, especificadas en milímetros (mm) para su longitud, anchura y altura, respectivamente. Esto proporciona información sobre el tamaño compacto del dispositivo, lo que facilita su instalación en espacios reducidos."
     },
     {
         "Nombre": "75 g",
-        "Descripcion": "Indica el peso del dispositivo, medido en gramos (g). Es útil para evaluar la portabilidad del dispositivo y para garantizar que no exceda los límites de peso en aplicaciones de montaje o transporte."
+        "Explicacion": "Indica el peso del dispositivo, medido en gramos (g). Es útil para evaluar la portabilidad del dispositivo y para garantizar que no exceda los límites de peso en aplicaciones de montaje o transporte."
     },
     {
         "Nombre": "5 V/1 A Power Adapter",
-        "Descripcion": "Este dispositivo requiere un adaptador de corriente con una salida de 5 voltios y una corriente de 1 amperio para su funcionamiento adecuado. Este adaptador suministra la energía necesaria para alimentar el dispositivo."
+        "Explicacion": "Este dispositivo requiere un adaptador de corriente con una salida de 5 voltios y una corriente de 1 amperio para su funcionamiento adecuado. Este adaptador suministra la energía necesaria para alimentar el dispositivo."
     },
     {
         "Nombre": "Maximum AC input: 2.87 W",
-        "Descripcion": "La entrada de corriente alterna (AC) máxima que puede manejar este dispositivo es de 2.87 vatios. Esto representa la cantidad máxima de energía que el dispositivo puede consumir en condiciones de funcionamiento normales."
+        "Explicacion": "La entrada de corriente alterna (AC) máxima que puede manejar este dispositivo es de 2.87 vatios. Esto representa la cantidad máxima de energía que el dispositivo puede consumir en condiciones de funcionamiento normales."
     },
     {
         "Nombre": "Standby AC input: 0.47 W",
-        "Descripcion": "En modo de espera, este dispositivo consume 0.47 vatios de energía de entrada de corriente alterna (AC). Esta es la cantidad de energía que el dispositivo consume cuando no está en uso pero sigue conectado a una fuente de alimentación."
+        "Explicacion": "En modo de espera, este dispositivo consume 0.47 vatios de energía de entrada de corriente alterna (AC). Esta es la cantidad de energía que el dispositivo consume cuando no está en uso pero sigue conectado a una fuente de alimentación."
     },
     {
         "Nombre": "Operating: 0 to 40 °C",
-        "Descripcion": "El dispositivo puede funcionar de manera segura y eficiente en un rango de temperatura que va desde 0°C hasta 40°C. Es importante para garantizar el rendimiento óptimo del dispositivo en diferentes entornos de temperatura."
+        "Explicacion": "El dispositivo puede funcionar de manera segura y eficiente en un rango de temperatura que va desde 0°C hasta 40°C. Es importante para garantizar el rendimiento óptimo del dispositivo en diferentes entornos de temperatura."
     },
     {
         "Nombre": "Storage: -10 to 70 °C",
-        "Descripcion": "Para un almacenamiento seguro a largo plazo, este dispositivo puede soportar temperaturas que van desde -10°C hasta 70°C. Esto garantiza la integridad y el rendimiento del dispositivo durante el almacenamiento en diversas condiciones ambientales."
+        "Explicacion": "Para un almacenamiento seguro a largo plazo, este dispositivo puede soportar temperaturas que van desde -10°C hasta 70°C. Esto garantiza la integridad y el rendimiento del dispositivo durante el almacenamiento en diversas condiciones ambientales."
     },
     {
         "Nombre": "Operating: 10% to 90% non-condensing",
-        "Descripcion": "El dispositivo puede operar de manera segura en un rango de humedad relativa que va desde el 10% hasta el 90%, sin riesgo de condensación en su interior. La condensación puede dañar los componentes del dispositivo y afectar su funcionamiento."
+        "Explicacion": "El dispositivo puede operar de manera segura en un rango de humedad relativa que va desde el 10% hasta el 90%, sin riesgo de condensación en su interior. La condensación puede dañar los componentes del dispositivo y afectar su funcionamiento."
     },
     {
         "Nombre": "Storage: 5% to 90% non-condensing",
-        "Descripcion": "Similar al punto anterior, este rango de humedad relativa (del 5% al 90%) se aplica al almacenamiento a largo plazo del dispositivo, asegurando que se mantenga seguro y funcional en diferentes condiciones de humedad."
+        "Explicacion": "Similar al punto anterior, este rango de humedad relativa (del 5% al 90%) se aplica al almacenamiento a largo plazo del dispositivo, asegurando que se mantenga seguro y funcional en diferentes condiciones de humedad."
     },
     {
         "Nombre": "1,479,725 hours",
-        "Descripcion": "Esta cifra representa la vida útil estimada del dispositivo en horas. Significa que se espera que el dispositivo funcione de manera confiable durante aproximadamente 1,479,725 horas antes de requerir mantenimiento o reemplazo."
+        "Explicacion": "Esta cifra representa la vida útil estimada del dispositivo en horas. Significa que se espera que el dispositivo funcione de manera confiable durante aproximadamente 1,479,725 horas antes de requerir mantenimiento o reemplazo."
     },
     {
         "Nombre": "CE class B",
-        "Descripcion": "Indica que el dispositivo cumple con los estándares de seguridad y compatibilidad electromagnética (EMC) de la Unión Europea, siendo clasificado como Clase B. Esto garantiza que el dispositivo no interfiera de manera significativa con otros equipos electrónicos y que sea seguro de usar."
+        "Explicacion": "Indica que el dispositivo cumple con los estándares de seguridad y compatibilidad electromagnética (EMC) de la Unión Europea, siendo clasificado como Clase B. Esto garantiza que el dispositivo no interfiera de manera significativa con otros equipos electrónicos y que sea seguro de usar."
     },
     {
         "Nombre": "FCC class B",
-        "Descripcion": "Indica que el dispositivo cumple con los estándares de la Comisión Federal de Comunicaciones (FCC) de los Estados Unidos, siendo clasificado como Clase B. Esto garantiza que el dispositivo cumple con los límites de emisión de interferencias electromagnéticas y es seguro para su uso en entornos residenciales."
+        "Explicacion": "Indica que el dispositivo cumple con los estándares de la Comisión Federal de Comunicaciones (FCC) de los Estados Unidos, siendo clasificado como Clase B. Esto garantiza que el dispositivo cumple con los límites de emisión de interferencias electromagnéticas y es seguro para su uso en entornos residenciales."
     },
     {
         "Nombre": "ICES-003 Class B",
-        "Descripcion": "Este marcado indica que el dispositivo cumple con los estándares de interferencia electromagnética (EMI) establecidos por el Instituto de Ingenieros Eléctricos y Electrónicos de Canadá (ICES). La Clase B se refiere a los dispositivos destinados para uso doméstico que cumplen con los límites de emisión de EMI."
+        "Explicacion": "Este marcado indica que el dispositivo cumple con los estándares de interferencia electromagnética (EMI) establecidos por el Instituto de Ingenieros Eléctricos y Electrónicos de Canadá (ICES). La Clase B se refiere a los dispositivos destinados para uso doméstico que cumplen con los límites de emisión de EMI."
     },
     {
         "Nombre": "VCCI class B",
-        "Descripcion": "Indica que el dispositivo cumple con los estándares de la Asociación de la Industria Electrónica y de Tecnologías de la Información de Japón (VCCI), siendo clasificado como Clase B. Esto garantiza que el dispositivo cumple con los límites de emisión de interferencias electromagnéticas y es seguro para su uso en entornos residenciales."
+        "Explicacion": "Indica que el dispositivo cumple con los estándares de la Asociación de la Industria Electrónica y de Tecnologías de la Información de Japón (VCCI), siendo clasificado como Clase B. Esto garantiza que el dispositivo cumple con los límites de emisión de interferencias electromagnéticas y es seguro para su uso en entornos residenciales."
     },
     {
         "Nombre": "BSMI",
-        "Descripcion": "Este marcado indica que el dispositivo cumple con los requisitos de seguridad y compatibilidad electromagnética (EMC) de la Administración de Estándares de Metrología, Inspección y Seguridad de Taiwán (BSMI). Esto permite que el dispositivo sea comercializado y utilizado en Taiwán."
+        "Explicacion": "Este marcado indica que el dispositivo cumple con los requisitos de seguridad y compatibilidad electromagnética (EMC) de la Administración de Estándares de Metrología, Inspección y Seguridad de Taiwán (BSMI). Esto permite que el dispositivo sea comercializado y utilizado en Taiwán."
     },
     {
         "Nombre": "LVD",
-        "Descripcion": "La Directiva de Baja Tensión (LVD) es una normativa de la Unión Europea (UE) que establece los requisitos de seguridad eléctrica para los equipos eléctricos dentro de ciertos límites de tensión. El marcado LVD indica que el dispositivo cumple con estos requisitos y es seguro de usar en la UE."
+        "Explicacion": "La Directiva de Baja Tensión (LVD) es una normativa de la Unión Europea (UE) que establece los requisitos de seguridad eléctrica para los equipos eléctricos dentro de ciertos límites de tensión. El marcado LVD indica que el dispositivo cumple con estos requisitos y es seguro de usar en la UE."
     },
     {
         "Nombre": "RCM",
-        "Descripcion": "El Marcado de Conformidad Regulatoria (RCM) es un requisito para los productos vendidos en Australia y Nueva Zelanda, que garantiza que cumplen con los estándares de seguridad eléctrica y de radiocomunicaciones establecidos por las autoridades regulatorias."
+        "Explicacion": "El Marcado de Conformidad Regulatoria (RCM) es un requisito para los productos vendidos en Australia y Nueva Zelanda, que garantiza que cumplen con los estándares de seguridad eléctrica y de radiocomunicaciones establecidos por las autoridades regulatorias."
     },
     {
         "Nombre": "Anatel",
-        "Descripcion": "Este marcado indica que el dispositivo cumple con los requisitos de certificación de la Agencia Nacional de Telecomunicaciones (Anatel) de Brasil, lo que permite su comercialización y uso en el país."
+        "Explicacion": "Este marcado indica que el dispositivo cumple con los requisitos de certificación de la Agencia Nacional de Telecomunicaciones (Anatel) de Brasil, lo que permite su comercialización y uso en el país."
     },
     {
         "Nombre": "KCC",
-        "Descripcion": "Indica que el dispositivo cumple con los requisitos de certificación de la Comisión de Comunicaciones de Corea (KCC), permitiendo su comercialización y uso en Corea del Sur."
-    }, 
-    /* DGS-105GL/DGS108GL */
-    
+        "Explicacion": "Indica que el dispositivo cumple con los requisitos de certificación de la Comisión de Comunicaciones de Corea (KCC), permitiendo su comercialización y uso en Corea del Sur."
+    }
 ]
 
 // Obtener el contenedor del pop-up
